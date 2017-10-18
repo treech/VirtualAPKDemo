@@ -63,6 +63,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         intent.setClassName("com.virtualapk.imageplugin", "com.virtualapk.imageplugin.ImageBrowserActivity");
         startActivity(intent);
 //        textView.setVisibility(View.INVISIBLE);
+
+        Intent intent1 = new Intent();
+        intent1.setClassName("com.virtualapk.imageplugin", "com.virtualapk.imageplugin.ImageService");
+        startService(intent1);
+
     }
 
     private void loadPlugin(Context base) {
